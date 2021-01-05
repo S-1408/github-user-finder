@@ -1,0 +1,22 @@
+
+<div class="card-title" style="text-align: center;">
+  <h4>All <strong class="circle" >{{repoNum}}</strong> repositories of <strong>{{user.name}}</strong></h4>
+</div>
+
+<ng-container *ngIf="repos?.length>0">
+  <div *ngFor="let repo of repos" class="list-group">
+
+
+      <a [href]="repo?.html_url"
+      target="_blank"
+      class=" list-group-item list-group-item-action" >{{repo?.name | uppercase }} <br>
+    <p style="color:rgb(24, 173, 37)">{{repo?.description}}</p>
+     </a>
+
+
+
+
+
+    </div>
+
+</ng-container>

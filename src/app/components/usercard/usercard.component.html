@@ -1,0 +1,35 @@
+<div class="card-title" style="text-align: center;">
+  <h4>Personal Info</h4>
+</div>
+<div class="card user-card text-white " >
+
+    <div class="background bg-info">
+        <img [src]="user.avatar_url" alt="" class="img-fluid rounded-circle profile-pic border-2 border-white">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">
+            {{user.name | uppercase}}
+        </h5>
+        <p class="card-text">
+          <fa-icon [icon]="faBook"></fa-icon> &nbsp;
+         {{user.bio}}
+        </p>
+        <p class="card-text">
+          <fa-icon [icon]="faBuilding"></fa-icon> &nbsp;
+             {{user.company}}
+        </p>
+        <p class="card-text">
+          <fa-icon [icon]="faMapMarkerAlt"></fa-icon> &nbsp;
+             {{user.location}}
+        </p>
+       <p class="card-text">
+        <a [href]="user.html_url"> <fa-icon [icon]="faLink"></fa-icon> &nbsp;
+             {{user.html_url}}</a>
+        </p>
+
+        <p class="card-text">
+          <fa-icon [icon]="faPencilAlt"></fa-icon> &nbsp;
+                {{user.updated_at | date: "short"}}
+            </p>
+    </div>
+</div>

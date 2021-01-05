@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "github-login-firebase"
+  "defaultProject": "github-login-firebase",
+  "cli": {
+    "analytics": "2813d975-f12d-4157-8c6e-38a096fa884a"
+  }
 }
